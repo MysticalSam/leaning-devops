@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 20px;
+        }
+
+        .sidebar {
+            background: #f4f4f4;
+            padding: 10px;
+        }
+
+        .sidebar h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .portfolio img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <div class="sidebar">
+                <h3>About Me</h3>
+                <p>This is where you can introduce yourself briefly.</p>
+                <h3>Contact</h3>
+                <p>Email: example@example.com<br> Phone: 123-456-7890</p>
+            </div>
+            <div class="portfolio">
+                <div>
+                    <img src="https://placeimg.com/250/250/any" alt="Project 1">
+                </div>
+                <div>
+                    <img src="https://placeimg.com/250/250/tech" alt="Project 2">
+                </div>
+                <div>
+                    <img src="https://placeimg.com/250/250/nature" alt="Project 3">
+                </div>
+                <div>
+                    <img src="https://placeimg.com/250/250/arch" alt="Project 4">
+                </div>
+                <!-- Add more project images as needed -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
